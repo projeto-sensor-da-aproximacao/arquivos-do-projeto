@@ -1,0 +1,78 @@
+.logo{
+    height: 70px;
+    margin: 15px;
+    float: left;
+}
+
+.div_entrar{
+    float: right;
+    margin: 15px;
+    line-height: 1.34;
+    height: 150px;
+}
+
+.bt_entrar{
+    background-color: rgb(255, 123, 0);
+    padding: 5px;
+    border-radius: 10%;
+    border: 2px solid black;
+    float: right;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 23px;
+}
+
+.td_email{
+    font-size: 15px;
+}
+
+.td_senha{
+    font-size: 15px;
+}
+
+label{
+    font-weight: normal;
+    vertical-align: middle;
+    padding: 1.5px;
+}
+
+.tr_inputs input{
+    border: 3px solid black;
+    border-radius: 5px;
+    float:left;
+}
+
+.div_inicio{
+    background-color:  orange;
+    height: 100px;
+    margin: 0;
+    border-bottom: 5px solid black;
+}
+body{
+    margin: 0;
+}
+
+.bt_cadastrar{
+    background-color: rgb(255, 123, 0);
+    border: 2px solid black;
+    border-radius: 10%;
+    float: right;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.td_pergunta{
+    font-size: 14px;
+    width: 55%;
+    align-content: center;
+    line-height: 2.3;
+}
+
+.td_input_email{
+    width: 100px;
+}
+
+.pergunta_cdt {
+    float: left;
+    
+}
