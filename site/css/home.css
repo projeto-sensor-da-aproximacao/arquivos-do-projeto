@@ -1,5 +1,12 @@
 .logo{
     height: 60px;
+    float: left;
+}
+
+.navbar-brand{
+    line-height: 2.80;
+    animation-duration: 5s;
+    animation-name: anm_logo;
 }
 
 .div_em_sn{
@@ -9,6 +16,8 @@
 .navbar{
     background-color: rgb(11,61,50);
     border-bottom: 7px solid black;
+    position: fixed;
+    width: 100%;
 }
 
 .txt_em_sn{
@@ -31,6 +40,7 @@
 }
 .btn{
     width: 90px;
+    color:black
 }
 
 .btn_ent{
@@ -43,14 +53,14 @@
 .btn_cad{
     margin-left: 70px;
     border: 3px solid black;
-    background-color: rgb(39, 156, 177);
+    background-color: rgb(6, 153, 146);
     padding-right: 78px;
 }
 
 .div_btns{
     width: 20%;
 }
-@keyframes anm_pergunta{
+@keyframes anm_palavras{
     0% {color:rgb(11,61,50)}
     100%{
         color: rgba(255,255,255,.5);
@@ -61,7 +71,7 @@
     margin-left: 30px;
     width: 200px;
     animation-duration: 5s;
-    animation-name: anm_pergunta;
+    animation-name: anm_palavras;
 }
 .email{
     line-height: 2.50;
@@ -77,25 +87,93 @@
 .rodape{
     background-color: rgb(11,61,50);
     color: rgba(255,255,255,.5);
+    height: 50px;
+    line-height: 3;
 }
 @keyframes anm_img1{
-    0%{
-        margin:10px ;
+    0% {
+        margin-left: 0;
+        opacity: 0%;
     }
     100%{
-        margin: 50px;
+        margin-left: 70px; 
+        opacity: 100%;
     }
 }
+
 .img_1{
-    margin: 0;
-    animation-name: anm-img1;
-    animation-duration: 5s;
+    border-radius: 10%;
+    margin-left: 70px;
+    margin-top: 30px;
+    animation-name: anm_img1;
+    animation-duration: 3s;
+    float: left;
 }
-@keyframes anm_img1{
-    0%{
-        margin:10px ;
+@keyframes anm_logo{
+    0% {
+        color:rgb(11,61,50)
     }
     100%{
-        margin: 50px;
+        color: white;
     }
+}
+
+.nav-link{
+    animation-duration: 6s;
+    animation-name: anm_palavras;
+}
+body{
+    background-color: white;
+}
+.conteudo{
+    margin-left: 70px;
+    background-color: rgb(6, 153, 146);
+    margin-right: 70px;
+    padding-bottom: 100%;
+    background-image: linear-gradient(rgb(6, 153, 146),white);
+    border-left: 7px solid black;
+    border-right: 7px solid black;
+}
+
+.copyright{
+    margin-left: 20px;
+}
+@keyframes anm_titulo{
+    0%{
+        color:white;
+    }
+    5%{
+        color:rgb(6, 153, 146);
+    }
+    10%{
+        color:white;
+    }
+    15%{
+        color:rgb(6, 153, 146);
+    }
+    20%{
+        color:white;
+    }
+    30%{
+        color:rgb(6, 153, 146);
+    }
+    100%{
+        color:white;
+    }
+}
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    animation-name: anm_titulo;
+    animation-duration: 1.5s;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.h2_1{
+    margin-top: 90px;
+    margin-left: 30px;
+    text-align: center;
+    animation-name: anm_img1;
+    animation-duration: 3s;
 }
