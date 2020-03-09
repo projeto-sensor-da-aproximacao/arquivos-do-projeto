@@ -1,0 +1,103 @@
+create database projeto_real;
+
+use projeto_real;
+
+-- tabela que demonstrara os coredores e sensores que haverão nele.
+create table corredores (
+idcorredor int primary key auto_increment,
+Nome_corredor varchar (35)
+);
+
+-- verificaçao e descriçao de estrutura da tabela corredores.
+desc corredores;
+select * from corredores;
+
+
+-- tabela que fara os registros dos sensores. 
+create table sensores (
+Registros int primary key auto_increment,
+Dia date,
+Horário time,
+Sensor int
+);
+-- verificaçao e descriçao de estrutura da tabela sensores
+select * from sensores;
+desc sensores;
+
+
+
+-- inserts feitos na tabela corredores.
+insert into corredores (idcorredor , nome_corredor) values 
+(null, 'Higiene'),
+(null, 'Matinais'),
+(null, 'Bebidas'),
+(null, 'Limpeza');
+
+
+
+-- inserts feitos na tabela sensores.
+insert into sensores values
+(null , '2020-03-10' , '06:00:34','6'),
+(null , '2020-03-10' , '07:46:35','1'),
+(null , '2020-03-10' , '08:15:56','7'),
+(null , '2020-03-10' , '09:20:14','2'),
+(null , '2020-03-10' , '10:00:34','5'),
+(null , '2020-03-10' , '11:46:35','3'),
+(null , '2020-03-10' , '12:15:56','4'),
+(null , '2020-03-10' , '13:20:14','8'),
+(null , '2020-03-10' , '14:00:34','6'),
+(null , '2020-03-10' , '15:46:35','1'),
+(null , '2020-03-10' , '16:15:56','7'),
+(null , '2020-03-10' , '17:20:14','2'),
+(null , '2020-03-10' , '18:00:34','5'),
+(null , '2020-03-10' , '19:00:34','5'),
+(null , '2020-03-10' , '20:46:35','3'),
+(null , '2020-03-10' , '21:15:56','4'),
+(null , '2020-03-10' , '22:20:14','8'),
+(null , '2020-03-11' , '06:00:34','6'),
+(null , '2020-03-11' , '07:46:35','1'),
+(null , '2020-03-11' , '08:15:56','7'),
+(null , '2020-03-11' , '09:20:14','2'),
+(null , '2020-03-11' , '10:00:34','6'),
+(null , '2020-03-11' , '11:46:35','1'),
+(null , '2020-03-11' , '12:15:56','7'),
+(null , '2020-03-11' , '13:20:14','2'),
+(null , '2020-03-11' , '14:15:56','7'),
+(null , '2020-03-11' , '15:20:14','2'),
+(null , '2020-03-11' , '16:00:34','6'),
+(null , '2020-03-11' , '17:46:35','1'),
+(null , '2020-03-11' , '18:15:56','7'),
+(null , '2020-03-11' , '19:20:14','2'),
+(null , '2020-03-11' , '20:15:56','7'),
+(null , '2020-03-11' , '21:20:14','2'),
+(null , '2020-03-11' , '22:00:34','6'),
+(null , '2020-03-11' , '22:46:35','1'),
+(null , '2020-03-12' , '06:15:56','7'),
+(null , '2020-03-12' , '07:15:56','8'),
+(null , '2020-03-12' , '08:00:34','6'),
+(null , '2020-03-12' , '09:46:35','1'),
+(null , '2020-03-12' , '09:20:14','2'),
+(null , '2020-03-12' , '10:00:34','5'),
+(null , '2020-03-12' , '11:46:35','3'),
+(null , '2020-03-12' , '12:15:56','4'),
+(null , '2020-03-12' , '13:20:14','8');
+
+
+
+
+
+-- selects para consultar a planilha.
+
+-- selecionar registros de uma data e sensor especificos.
+select * from sensores where dia <"2020-03-12" and sensor='1';
+
+-- contar quantidade de registros de um sensor especifico.
+SELECT COUNT(sensor)
+FROM sensores
+WHERE sensor =1;
+
+-- mostrar todos os registros de um sensor especifico.
+select * from sensores where sensor like 1;
+select * from sensores where sensor >=4 and sensor<6;
+
+
