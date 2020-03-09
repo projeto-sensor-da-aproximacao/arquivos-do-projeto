@@ -5,7 +5,9 @@ use projeto_real;
 -- tabela que demonstrara os coredores e sensores que haverão nele.
 create table corredores (
 idcorredor int primary key auto_increment,
-Nome_corredor varchar (35)
+Nome_corredor varchar (35),
+Entrada int,
+Saida int
 );
 
 -- verificaçao e descriçao de estrutura da tabela corredores.
@@ -27,11 +29,11 @@ desc sensores;
 
 
 -- inserts feitos na tabela corredores.
-insert into corredores (idcorredor , nome_corredor) values 
-(null, 'Higiene'),
-(null, 'Matinais'),
-(null, 'Bebidas'),
-(null, 'Limpeza');
+insert into corredores values 
+(null , 'higiene','1','2'),
+(null, 'matinais','3','4'),
+(null , 'bebidas','5','6'),
+(null , 'limpeza','7','8');
 
 
 
