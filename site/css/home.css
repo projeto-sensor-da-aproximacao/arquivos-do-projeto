@@ -14,10 +14,11 @@
     float: left;
 }
 .navbar{
-    background-color: rgb(11,61,50);
+    background-color: rgb(22,59,52);
     border-bottom: 7px solid black;
     position: fixed;
     width: 100%;
+    color:white;
 }
 
 .txt_em_sn{
@@ -25,18 +26,6 @@
     color: white;
     padding-right: 5px;
     margin-bottom: 7px;
-}
-
-.ipt_em{
-    margin-bottom: 5px;
-    border: 3px solid black;
-    padding-top: 12px;
-    padding-bottom:12px;
-}
-.ipt_sn{
-    border: 3px solid black;
-    padding-top: 12px;
-    padding-bottom:12px;
 }
 .btn{
     width: 90px;
@@ -59,6 +48,9 @@
 
 .div_btns{
     width: 20%;
+    color: white;
+    float: right;
+    
 }
 @keyframes anm_palavras{
     0% {color:rgb(11,61,50)}
@@ -81,7 +73,6 @@
 }
 
 .navbar-collapse{
-    flex-grow: 0!important;
     margin-right: 200px;
 }
 .rodape{
@@ -133,6 +124,8 @@ body{
     background-image: linear-gradient(rgb(6, 153, 146),white);
     border-left: 7px solid black;
     border-right: 7px solid black;
+    margin-top: 0px;
+    padding-top: 250px;
 }
 
 .copyright{
@@ -140,40 +133,55 @@ body{
 }
 @keyframes anm_titulo{
     0%{
-        color:white;
+        color:rgba(255,255,255,.5);
     }
     5%{
-        color:rgb(6, 153, 146);
+        color:rgb(22,59,52);
     }
     10%{
-        color:white;
+        color:rgba(255,255,255,.5);
     }
     15%{
-        color:rgb(6, 153, 146);
+        color:rgb(22,59,52);
     }
     20%{
-        color:white;
+        color:rgba(255,255,255,.5);
     }
     30%{
-        color:rgb(6, 153, 146);
+        color:rgb(22,59,52);
     }
     100%{
-        color:white;
+        color:rgba(255,255,255,.5);
     }
 }
 .titulo{
     font-size: 50px;
     text-align: center;
-    animation-name: anm_titulo;
-    animation-duration: 1.5s;
     color: white;
-    padding-top: 30px;
     padding-bottom: 30px;
+    margin: 0;
 }
 .h2_1{
-    margin-top: 90px;
     margin-left: 30px;
     text-align: center;
     animation-name: anm_img1;
     animation-duration: 3s;
+}
+
+.txt_logo{
+    line-height: auto;
+    animation-name: anm_titulo;
+    animation-duration: 1.5s;
+}
+.container{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    margin: 0!important;
+}
+.collapse{
+    width: 20%;
+    padding:0;
 }
