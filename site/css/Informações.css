@@ -156,7 +156,7 @@ body{
     float: left;
 }
 .simulador{
-    color: white;
+    color: rgba(255,255,255,.5);
     animation-name:anm_palavra_simulador;
     animation-duration: 3s;
 }
@@ -208,7 +208,9 @@ li{
     animation-duration: 3s;
 }
 .informacoes{
-    color: rgba(255,255,255,.5);
+    color: white;
+    animation-name:anm_palavra_informacoes;
+    animation-duration: 3s;
 }
 @keyframes anm_palavras{
     0% {
@@ -218,7 +220,7 @@ li{
        opacity: 100%;
     }
 }
-@keyframes anm_palavra_simulador{
+@keyframes anm_palavra_informacoes{
     0% {
         opacity: 0%;
     }
@@ -249,4 +251,33 @@ li{
     100%{
         color:white;
     }
+}
+body{
+    background-color: rgb(44, 71, 68);
+}
+.conteudo{
+    margin-left: 90px;
+    background-color: rgb(6, 153, 146);
+    margin-right: 70px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(rgb(6, 153, 146),white);
+    border-left: 7px solid black;
+    border-right: 7px solid black;
+    margin-top: 0px;
+    padding-top: 150px;
+}
+
+.txts{
+    margin-left: 80px;
+    font-size: 130%;
+}
+.txts span{
+    color: rgb(19, 63, 61);
+}
+.rodape{
+    background-color: rgb(11,61,50);
+    color: rgba(255,255,255,.5);
+    height: 50px;
+    line-height: 3;
+    width: 100%;
 }

@@ -28,60 +28,37 @@ body{
     box-shadow: 9999999px 9999999px 9999999px rgb(0, 0,8);
     animation-name: anm_corpo;
     animation-duration: 5s;
+    box-sizing: border-box;
 }
 .div_conteudo{
-    margin:13%;
     line-break: auto;
     color: rgb(6, 153, 146);
     text-shadow: 1px 1px black;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 80px;
 }
-
-.div_ipts{
-    text-align: center;
-    align-self: center;
-    margin-bottom: 50px;
+.logo{
+    height: 90px;
+    margin-left: 165px;
+    box-sizing: border-box;
+    position: relative;
+    
 }
-
 .ipt{
-    height: 20px;
-    width: 350px;
-    border-radius: 5%;
-    border: 3px solid black;
-}
-
-.img_logo{
-    width: 25%;
-    margin-bottom: 20px;
-}
-.div_btns{
-    margin-left: 60px;
-}
-.btn_ent{
-    margin-left: 90px;
+        height: 20px;
+        width: 350px;
+        border-radius: 5%;
+        border: 3px solid black;
+        font-size: 120%;
 }
 .btn_cad{
-    margin-left: 90px;
-}
-
-.pergunta{
-    margin-left: 50px;
-}
-
-.btn{
-    border-radius: 10%;
+    margin-left: 125px;
     border: 3px solid black;
-    width: 30%;
-    height: 30px;
     background-color: rgb(6, 153, 146);
-    cursor: pointer;
-}
-
-.rodape{
-    background-color: rgb(11,61,50);
-    color: rgba(255,255,255,.5);
-    height: 50px;
-    line-height: 3;
-}
-.copyright{
-    margin-left: 20px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

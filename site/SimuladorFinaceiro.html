@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Financeiro</title>
 </head>
-<body style="margin: 0;">
-    <img src="imagens/imagem_home1.jpg" style="width: 100%; position: fixed;">
-    <nav>
+<body style="margin: 0; background-color: black;">
+    <img src="imagens/apertoDeMaos.jpg" style="width: 100%; position: fixed;opacity: 20%;">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="./imagens/Logo4.png" class="logo">
+                <div class="txt_logo">SENSE MOTION</div>
+            </a>
+            <div class="collapse" id="navbarResponsive">
+                <a class="nav-link home" href="home2.html">Home</a>
+                <a class="nav-link simulador" href="SimuladorFinaceiro.html">Simulador</a>
+                <a class="nav-link informacoes" href="Informações.html">Informações</a>
+            </div>
+        </div>
+    </nav>
         <div class="div_corpo">
             <div class="div_conteudo">
                <div class="div_ipt">
                     <img src="imagens/Logo4.png" class="img_logo"><br>
-                    <span>Por favor, digite a quantidade de sensores para a sua empresa:</span>
+                    <span class="txt_prf">Por favor, digite a quantidade de sensores para a sua empresa:</span><br><br>
                     <input class="ipt" type="text" placeholder="Quantidade de sensores" id="sensores">
-                    <button onclick="calcula_valor()" class="btn">Simular Orsamento</button>
+                    <button onclick="calcula_valor()" class="btn">Simular Orçamento</button>
                 </div>
-                <div id="div_msg" style="text-size:300px; margin: 30px;"></div>
+                <div id="div_msg" style="font-size:200%; margin: 30px;"></div>
             </div>
         </div>
-    </nav>
 </body>
 </html>
 
