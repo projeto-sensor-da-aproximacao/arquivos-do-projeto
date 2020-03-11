@@ -1,5 +1,7 @@
 .Configuracoes{
-    display: block;
+    display: none;
+    background-color: rgb(42, 109, 97);
+    height: 1000px;
 }
 
 .txt_cor{
@@ -13,52 +15,13 @@
 }
 .ipt_cor{
     float: left;
-}
-.red{
-    background-color: red;
     position: absolute;
-    margin-top: 4px;
-    margin-left: 20px;
-    border: 3px solid rgb(10, 27, 24);
-}
-.green{
-    background-color: rgb(22,59,52);
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 20px;
-    border: 3px solid rgb(10, 27, 24);
-}
-
-.blue{
-    background-color: blue;
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 20px;
-    border: 3px solid rgb(10, 27, 24);
-}
-.pink{
-    background-color: palevioletred;
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 20px;
-    border: 3px solid rgb(10, 27, 24);
-}
-.black{
-    background-color: black;
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 20px;
-    border: 3px solid rgb(10, 27, 24);
-}
-.violet{
-    background-color: blueviolet;
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 20px;
-    border: 3px solid rgb(10, 27, 24);
 }
 .cor_page{
     background-color: rgb(22,59,52);
     border-bottom: 5px solid black;
-    height: 200px;
+    height: 300px;
+}
+.txt_graf{
+    margin-left: 20px;
 }

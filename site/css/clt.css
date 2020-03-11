@@ -44,3 +44,8 @@ li{
 .div_conteudo{
     margin-left: 177px;
 }
+
+.btn_sair{
+    text-decoration: none;
+    color: black;
+}

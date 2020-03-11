@@ -1,7 +1,10 @@
 .perfil{
-    display: none;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: rgb(42, 109, 97);
+    height: 1000px;
 }
 
 .titulo_prf{
-    padding-block-start: 0;
+    font-size: 180%;
 }
