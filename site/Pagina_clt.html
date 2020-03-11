@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/clt.css">
     <link rel="stylesheet" href="css/Config.css">
-    <link rel="stylesheet" href="css/perfil.css">
     <title>Pagina do usuario</title>
 </head>
 <body>
@@ -13,169 +12,126 @@
         <nav class="navegacao">
             <img src="./imagens/Logo4.png" class="logo"><br>
             <ul class="ul_btns">
-               <li class="btn_nav" onclick="mostraPerfil()">Perfil</li>
-               <li class="btn_nav" onclick="mostraConfig()" >Configurações</li>
-               <li class="btn_nav" onclick="mostraSensores()">Sensores Cadastrados</li>
+               <li class="btn_nav">Perfil</li>
+               <li class="btn_nav">Configurações</li>
                <li class="btn_nav">Suporte</li>
             </ul>
         </nav>
         <div class="div_conteudo">
-            <div class="perfil" id="perf">
-                <h2 class="titulo_prf">Perfil</h2>
-            </div>
-            <div class="Configuracoes" id="Config">
+            <div class="Configuracoes">
                 <div class="cor_page">
-                <h2 class="txt_cor">Tipos de Graficos</h2>
+                <h2 class="txt_cor">Cor da pagina</h2>
                     <ul>
-                        <li><input type="checkbox" class="ipt_cor" checked><div class="txt_graf">Linear</div></li><br>
-                        <li><input type="checkbox" class="ipt_cor"><div class="txt_graf">Pizza</div></li><br>
-                        <li><input type="checkbox" class="ipt_cor"><div class="txt_graf" ></div></li><br>
-                        <li><input type="checkbox" class="ipt_cor"><div class="txt_graf" ></div></li><br>
-                        <li><input type="checkbox" class="ipt_cor"><div class="txt_graf" ></div></li><br>
-                        <li><input type="checkbox" class="ipt_cor"><div class="txt_graf" ></div></li>
+                        <li><input type="checkbox" class="ipt_cor"><div class="div_cor red"></div></li><br>
+                        <li><input type="checkbox" class="ipt_cor"><div class="div_cor green"></div></li><br>
+                        <li><input type="checkbox" class="ipt_cor"><div class="div_cor blue"></div></li><br>
+                        <li><input type="checkbox" class="ipt_cor"><div class="div_cor pink"></div></li><br>
+                        <li><input type="checkbox" class="ipt_cor"><div class="div_cor black"></div></li><br>
+                        <li><input type="checkbox" class="ipt_cor"><div class="div_cor violet"></div></li>
                     </ul>
                 </div>
             </div>
-            <div class="snr_cad" id="sensor_cad">
+            <div class="snr_cad">
                     
     <i>Sensores Cadastrado</i>
-    <i>Sensores Cadastrado</i>
-<br>
-    <div style="float:left;">
-        <input type="checkbox" id="caixa1"> Corredor 1
-        <br>
-        
-    </div>
-            <div style="float: left;">
-            <input type="checkbox" id="caixa2"> Corredor 2
-            <input type="checkbox" id="caixa5"> Corredor 5
+    <br>
+        <div style="float:left;">
+            <input type="checkbox" id="caixa1"> Corredor 1
             <br>
-            </div>
-                <div style="float: left;">
-                <input type="checkbox" id="caixa3"> Corredor 3
+            
+        </div>
+                <div style="float: left%;">
+                <input type="checkbox" id="caixa2"> Corredor 2
+                <input type="checkbox" id="caixa5"> Corredor 5
                 <br>
                 </div>
-                    <div style="float:left;">
-                    <input type="checkbox" id="caixa4"> Corredor 4
-                    <input type="checkbox" id="caixa6"> Corredor 6
-                    </div>
-    
-<br><br>
-        
-<button style="background-color: green;">Cadastrar Sensor</button>
-<button style="background-color: red;">Excluir Sensor</button>
-
-<br><br>
-
-<span style="margin:40%;"> Sensores Selecionados</span>
-<br>
-<img src="https://www.guiadoexcel.com.br/wp-content/uploads/sites/866/2012/03/GraficoMudaCorMeta.png" 
-alt="grafico" width="500px" style="float: left;">
-<span style="margin: 10px;"> Escolha a data </span><input type="date" style="margin: 10px; ">
-                
-
-        <br><br>
-
-            <span style="margin-left: 10px;"> Escolha o primeiro corredor </span>
-            <select name="seleção" style="margin: 5px; margin-left: 10px;" id="selecao">
-            <option value="sensor0">--Selecione--</option>
-            <option value="sensor1">Corredor1</option>
-            <option value="2">Corredor2</option>
-            <option value="3">Corredor3</option>
-            <option value="4">Corredor4</option>
-            <option value="5">Corredor5</option>
-            <option value="6">Corredor6</option>
-            <option value="7">Corredor7</option>
-            </select>
-<br>
-            <span style="margin-left: 10px;"> Escolha o segundo corredor </span>
-            <select name="seleção1" style="margin: 5px; margin-left: 10px;" id="selecao1">
-            <option value="sensor0">--Selecione--</option>
-            <option value="sensor1">Corredor1</option>
-            <option value="2">Corredor2</option>
-            <option value="3">Corredor3</option>
-            <option value="4">Corredor4</option>
-            <option value="5">Corredor5</option>
-            <option value="6">Corredor6</option>
-            <option value="7">Corredor7</option>
-            </select>
-                <br>
-            <span style="margin-left: 10px;"> Escolha o terceiro corredor </span>
-            <select name="seleção" style="margin: 5px; margin-left: 10px;" id="selecao2">
-            <option value="sensor0">--Selecione--</option>
-            <option value="sensor1">Corredor1</option>
-            <option value="2">Corredor2</option>
-            <option value="3">Corredor3</option>
-            <option value="4">Corredor4</option>
-            <option value="5">Corredor5</option>
-            <option value="6">Corredor6</option>
-            <option value="7">Corredor7</option>
-            </select>
-                <br>
-            <span style="margin-left: 10px;"> Escolha o quarto corredor </span>
-            <select name="seleção" style="margin: 5px; margin-left: 10px;" id="selecao">
-            <option value="sensor0">--Selecione--</option>
-            <option value="sensor1">Corredor1</option>
-            <option value="2">Corredor2</option>
-            <option value="3">Corredor3</option>
-            <option value="4">Corredor4</option>
-            <option value="5">Corredor5</option>
-            <option value="6">Corredor6</option>
-            <option value="7">Corredor7</option>
-            </select>
-            <br>
-            <button style="margin-top: 10px ; margin-left: 10px;">Selecionar</button>
-<br><br><br>
-<br><br><br>
-                <i style="margin-left: 10%;">Informações</i>
-                <br>
-                    
-                <textarea name="area de texto" id="texto_area" cols="30" rows="10" style="width: 600px; float: left;""></textarea>
-               
-               <div style="float: left;">
-                <input type="checkbox" id="caixa_1"> Corredor 1
-                <br>
-                
-            </div>
-                    <div style="float: left";>
-                    <input type="checkbox" id="caixa_2"> Corredor 2
-                    <input type="checkbox" id="caixa_5"> Corredor 5
+                    <div style="float: left;">
+                    <input type="checkbox" id="caixa3"> Corredor 3
                     <br>
                     </div>
-                        <div style="float: left;">
-                        <input type="checkbox" id="caixa_3"> Corredor 3
-                        <br>
+                        <div style="float:left;">
+                        <input type="checkbox" id="caixa4"> Corredor 4
+                        <input type="checkbox" id="caixa6"> Corredor 6
                         </div>
-                            <div style="float:left;">
-                            <input type="checkbox" id="caixa_4"> Corredor 4
-                            <input type="checkbox" id="caixa_6"> Corredor 6
-                            </div>  
-        <br><br><br>
-
-<button onclick="button_ativar()">Ativar</button>
-<button onclick="button_desativar()">Desativar</button>
+        
+    <br><br>
+            
+    <button style="background-color: green;">Cadastrar Sensor</button>
+    <button style="background-color: red;">Excluir Sensor</button>
+    
+    <br><br>
+    
+    <span style="margin:40%;"> Sensores Selecionados</span>
+    <br>
+    <img src="https://www.guiadoexcel.com.br/wp-content/uploads/sites/866/2012/03/GraficoMudaCorMeta.png" 
+    alt="grafico" width="500px" style="float: left;">
+    <span style="margin: 10px;"> Escolha a data </span><input type="date" style="margin: 10px; ">
+                    
+    
+            <br><br>
+    
+                <span style="margin-left: 10px;"> Escolha o primeiro corredor </span>
+                <select name="seleção" style="margin: 5px; margin-left: 10px;">
+                <option value="sensor0">--Selecione--</option>
+                <option value="sensor1">Corredor1</option>
+                <option value="2">Corredor2</option>
+                <option value="3">Corredor3</option>
+                <option value="4">Corredor4</option>
+                <option value="5">Corredor5</option>
+                <option value="6">Corredor6</option>
+                <option value="7">Corredor7</option>
+                </select>
+    <br>
+                <span style="margin-left: 10px;"> Escolha o segundo corredor </span>
+                <select name="seleção" style="margin: 5px; margin-left: 10px;">
+                <option value="sensor0">--Selecione--</option>
+                <option value="sensor1">Corredor1</option>
+                <option value="2">Corredor2</option>
+                <option value="3">Corredor3</option>
+                <option value="4">Corredor4</option>
+                <option value="5">Corredor5</option>
+                <option value="6">Corredor6</option>
+                <option value="7">Corredor7</option>
+                </select>
+                    <br>
+                <span style="margin-left: 10px;"> Escolha o terceiro corredor </span>
+                <select name="seleção" style="margin: 5px; margin-left: 10px;">
+                <option value="sensor0">--Selecione--</option>
+                <option value="sensor1">Corredor1</option>
+                <option value="2">Corredor2</option>
+                <option value="3">Corredor3</option>
+                <option value="4">Corredor4</option>
+                <option value="5">Corredor5</option>
+                <option value="6">Corredor6</option>
+                <option value="7">Corredor7</option>
+                </select>
+                    <br>
+                <span style="margin-left: 10px;"> Escolha o quarto corredor </span>
+                <select name="seleção" style="margin: 5px; margin-left: 10px;">
+                <option value="sensor0">--Selecione--</option>
+                <option value="sensor1">Corredor1</option>
+                <option value="2">Corredor2</option>
+                <option value="3">Corredor3</option>
+                <option value="4">Corredor4</option>
+                <option value="5">Corredor5</option>
+                <option value="6">Corredor6</option>
+                <option value="7">Corredor7</option>
+                </select>
+                <br>
+                <button style="margin-top: 10px ; margin-left: 10px;">Selecionar</button>
+    <br><br><br>
+    <br><br><br>
+                    <i style="margin-left: 10%;">Informações</i>
+                    <br>
+                        
+                    <textarea name="area de texto" id="texto_area" cols="30" rows="10" style="width: 600px;"></textarea>
+                   <input type="checkbox" style="float:right;"> Corredor1
+                    <br>
+                    
+                    
+    <input type="text" placeholder="Mensagem" style="width: 44.70%;">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-<script>
-
-    function mostraConfig(){
-        Config.style.display = 'block';
-        sensor_cad.style.display = 'none';
-        perf.style.display = 'none';
-    }
-    function mostraSensores(){
-        Config.style.display = 'none';
-        sensor_cad.style.display = 'block';
-        perf.style.display = 'none';
-    }
-    function mostraPerfil(){
-        perf.style.display = 'block';
-        Config.style.display = 'none';
-        sensor_cad.style.display = 'none';
-    }
-    function button_ativar() 
-    {
-        texto_area.innerHTML = 'teste numero 1';
-    }
-</script>
