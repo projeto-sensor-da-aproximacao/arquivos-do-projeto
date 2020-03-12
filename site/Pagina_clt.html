@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/Config.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/Sensores_cad.css">
+    <link rel="stylesheet" href="css/suporte.css">
     <title>Pagina do usuario</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
                <li class="btn_nav" onclick="mostraPerfil()">Perfil</li>
                <li class="btn_nav" onclick="mostraConfig()" >Configurações</li>
                <li class="btn_nav" onclick="mostraSensores()">Sensores Cadastrados</li>
-               <li class="btn_nav">Suporte</li>
+               <li class="btn_nav" onclick="mostraSuporte()">Suporte</li>
                <li class="btn_nav"><a href="home.html" class="btn_sair">Sair</a></li>
             </ul>
         </nav>
@@ -62,14 +63,14 @@
                     
                 <br><br>
                         
-                <button style="background-color: green;">Cadastrar Sensor</button>
-                <button style="background-color: red;">Excluir Sensor</button>
+                <button class="btn_cad_sn">Cadastrar Sensor</button>
+                <button class="del_sn">Excluir Sensor</button>
                 
                 <br><br>
                 
                 <span style="margin:40%;"> Sensores Selecionados</span>
                 <br>
-                <img src="https://www.guiadoexcel.com.br/wp-content/uploads/sites/866/2012/03/GraficoMudaCorMeta.png" 
+                <img src="imagens/ExemploGrafico.png" 
                 alt="grafico" width="500px" style="float: left;">
                 <span style="margin: 10px;"> Escolha a data </span><input type="date" style="margin: 10px; ">
                                 
@@ -138,6 +139,16 @@
                 <input type="text" placeholder="Mensagem" style="width: 44.70%;">
                         </div>
                     </div>
+                <div class="suporte" id="assistencia">
+                    <span class="txt_ajuda">Precisa de Ajuda?</span><br>
+                    <select id="problema" onchange="mostra_sl()">
+                        <option value="selcione">Selecione uma opção</option>
+                        <option value="site">Problemas com o site</option>
+                        <option value="sensor">Problemas com o sensor</option>
+                    </select><br><br>
+                    <div class="div_msg_suporte_site" id="div_solução_site">Caso o problema esteja no seu perfil lige para(11)****-**** ou envie um email para SenseMotion@gmail.com</div>
+                    <div class="div_msg_suporte_sensores" id="div_solução_sensores">Caso o problema nos sensores contate a nossa equipe especializada enviando um email para suporte.SM@gmail.com e seu questionamento sera respondido dentro de 24horas</div>
+                </div>
     </div>
 </body>
 </html>
@@ -148,16 +159,36 @@
         Config.style.display = 'block';
         sensor_cad.style.display = 'none';
         perf.style.display = 'none';
+        assistencia.style.display = 'none';
     }
     function mostraSensores(){
         Config.style.display = 'none';
         sensor_cad.style.display = 'block';
         perf.style.display = 'none';
+        assistencia.style.display = 'none';
     }
     function mostraPerfil(){
         perf.style.display = 'block';
         Config.style.display = 'none';
         sensor_cad.style.display = 'none';
+        assistencia.style.display = 'none';
+    }
+    function mostraSuporte(){
+        assistencia.style.display = 'block';
+        perf.style.display = 'none';
+        Config.style.display = 'none';
+        sensor_cad.style.display = 'none';
+    }
+    function mostra_sl(){
+        if (problema.value == 'site'){
+            div_solução_site.style.display = 'block';
+            div_solução_sensores.style.display = 'none';
+        }
+
+        if (problema.value == 'sensor'){
+        div_solução_site.style.display = 'none';
+        div_solução_sensores.style.display = 'block';
+        }
     }
 
 </script>

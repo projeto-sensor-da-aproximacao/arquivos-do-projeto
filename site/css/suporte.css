@@ -1,0 +1,19 @@
+.suporte{
+    display: none;
+    padding-left: 200px;;
+    background-color: rgb(42, 109, 97);
+    height: 1000px;
+    padding-top: 10px;
+}
+
+.txt_ajuda{
+    font-size: 180%;
+}
+
+.div_msg_suporte_site{
+    display: none;
+}
+
+.div_msg_suporte_sensores{
+    display: none;
+}
