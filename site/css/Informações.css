@@ -12,6 +12,47 @@ body{
         opacity: 100%;
     }
 }
+
+.caixa_duvida{
+    width: 500px;
+    height: 500px;
+    border-radius: 6%;
+    border: 5px solid black;
+    margin: 50px;
+    background-color: rgb(81, 122, 113);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ipt_nome {
+      width: 350px;
+      height: 30px;
+
+}
+.ipt_email {
+    width: 350px;
+    height: 30px;
+}
+
+.ipt_assunto {
+    width: 350px;
+    height: 30px;
+}
+.btn_enviar {
+    border-radius: 10%;
+    border: 3px solid black;
+    width: 30%;
+    margin-left: 125px;
+    margin-top: 20px;
+    background-color: rgb(6, 153, 146);
+    cursor: pointer;
+
+}
+ .duvidas {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 70px;
+ } 
+
 .div_corpo{
     margin: 30%;
     height: 600px;
